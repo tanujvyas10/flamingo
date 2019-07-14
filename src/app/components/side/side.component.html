@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col s12 m4">
+        <a><span>
+            Notices added by you
+        </span>
+        <p class="num" *ngIf="userData">{{userData.posts.length}}</p>
+        <p class="num" *ngIf="!userData">0</p>
+      
+     </a>
+    </div>
+   
+</div>
+
+<ul class="collection with-header">
+        <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                <a [routerLink]="['/streams']">
+                  <div>Notices
+                    <a href="#!" class="secondary-content">
+                      <i class="material-icons">announcement</i>
+                    </a>
+                  </div>
+                </a>
+              </li>      
+            
+            <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+                    <a [routerLink]="['/people']">
+                      <div>People
+                        <a href="#!" class="secondary-content">
+                          <i class="material-icons">people</i>
+                        </a>
+                      </div>
+                    </a>
+                  </li>
+
+        <li class="collection-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+          <a [routerLink]="['/notifications']">
+            <div>Notifications
+              <a href="#!" class="secondary-content">
+                <i class="material-icons">alarm</i>
+              </a>
+            </div>
+          </a>
+        </li>
+ 
+
+    </ul>
+            

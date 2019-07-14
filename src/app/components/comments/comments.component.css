@@ -1,0 +1,41 @@
+.postDiv {
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  
+  form {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+  
+  .formDiv {
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .addImageBtn {
+    margin-bottom: 5px;
+  }
+  
+  .postBtn {
+    margin-bottom: 5px;
+  }
+  
+  .title {
+    font-weight: bold;
+    color:  #4A00E0 ;
+  }
+  
+  .time {
+    font-size: 14px;
+    color: #666565;
+  }
+  
+  .postComment {
+    font-size: 15px;
+  }
+
+  textarea{
+    color:white;
+  }

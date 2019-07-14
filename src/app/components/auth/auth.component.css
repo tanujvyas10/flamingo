@@ -1,0 +1,60 @@
+.bodyDiv{
+    
+    background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+div.bodyContainer{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    margin-top:50px !important;
+}
+
+.tabs a{
+    font-weight: bold;
+    font-size:18px;
+ color:#64b5f6;   
+}
+
+.tabs .active{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color:white;   
+}
+
+.auth-content{
+    height:515px !important;
+}
+
+
+
+
+
+.hero{
+    background-image: url('../../../assets/images/bg-1.png');
+    background-position: 50% 40%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    padding-top: 12.8rem;
+}
+
+.hero-container{
+    max-width: 76.875rem;
+}
+
+.hero-title{
+    font-size: 3rem;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+    font-weight: 900;
+}
+
+.hero-description{
+    opacity: .75;
+}
