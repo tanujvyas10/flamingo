@@ -127,20 +127,6 @@ return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({message:"Error occured
               );
        },
 
-
-      //  async GetPost(req,res){
-      //        await Post.findOne({_id:req.params.id})
-      //        .populate('user')
-      //        populate('comments.userId')
-      //        .then((post)=>{
-      //          console.log("here is the posts@")
-      //          res.status(HttpStatus.OK).json({message:"Post Found",post})
-      //        })
-      //        .catch(err=>{
-      //          res.status(HttpStatus.NOT_FOUND),json({message:"POSt not found!"})
-      //        })
-      //  }
-
       async GetPost(req, res) {
         await Post.findOne({ _id: req.params.id })
           .populate('user')
