@@ -20,27 +20,6 @@ module.exports={
              })
 
 
-            //  await User.update(
-            //     {
-            //         _id:req.body.userFollowed,
-            //         "followers.follower":{$ne:req.user._id}// that the follower is not already in the list of id of the person to be followed
-            //     },
-            //    { 
-            //     $push:{
-            //         followers:{
-            //             follower:req.user._id
-            
-            //         }
-            //         // ,
-            //         // notifications:{
-            //         //     senderId:req.user._id,
-            //         //     message:`${req.user.username}is now following you`,
-            //         //     created:new Date(),
-            //         //     viewProfile:false
-                        
-            //         // }
-            //     }
-            // })
             await User.update(
                 {
                   _id: req.body.userFollowed,
@@ -110,51 +89,7 @@ module.exports={
           .status(HttpStatus.INTERNAL_SERVER_ERROR)
           .json({ message: 'Error occured' });
       });
-  }
-
-    // UnFollowUser(req,res){
-    //    // alert("REached")
-    //     console.log("Reached at the UnFollowUsr",req.body)
-    //     const unfollowUser=async()=>{
-    //          await User.update(
-    //          {
-    //              _id:req.user._id,
-    //          },
-    //         { 
-    //          $pull:{
-    //              following:{
-    //                  userFollowed:req.body.userFollowed
-    //              }
-    //             }   
-    //          })
-
-
-    //          await User.update(
-    //             {
-    //                 _id:req.body.userFollowed
-    //             //    "followers.follower":{$ne:req.user._id}// that the follower is not already in the list of id of the person to be followed
-    //             },
-    //            { 
-    //             $pull:{
-    //                 followers:{
-    //                     follower:req.user._id
-            
-    //                 }
-    //             }
-    //         })
-
-    //     }
-        
-    //     unfollowUser()
-    //     .then(()=>{
-    //         res.status(HttpStatus.OK).json({message:'Un Following user now'})
-    //     })
-    //     .catch(err=>{
-
-    //         res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({message:"Error in unfolloweing the user"})
-    //     })
-    // }
-  
+  }  
 ,
 async MarkNotification(req,res){
   console.log("in backend at Marknotication",req.body)
